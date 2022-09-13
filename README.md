@@ -1,2 +1,2 @@
-# ms-bookshelf
-this micro-service handles requests about bookshelves
+# IT-Project-Team2
+Add suitable configuration to link your own database.
