@@ -1,0 +1,42 @@
+version: '3'
+services:
+  mysql:
+    platform: linux/amd64
+    image: mysql
+    container_name: bookshelfdb
+    environment:
+      - MYSQL_ROOT_PASSWORD=bookshelfdb
+      - MYSQL_DATABASE=bookshelfdb
+
+    ports:
+      - "3307:3306"
+    volumes:
+      - /data/mysql
+    networks:
+      - ms-bookshelf-network
+
+  ms:
+    restart: on-failure
+    container_name: ms-bookshelf
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ms-bookshelf:latest
+    expose:
+      - "8085"
+    ports:
+      - "8085:8085"
+    networks:
+      - ms-bookshelf-network
+    depends_on:
+      - mysql
+    environment:
+      - PORT=8080
+      - DATABASE_HOST=mysql
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=bookshelfdb
+      - DATABASE_NAME=bookshelfdb
+      - DATABASE_PORT=3306
+
+networks:
+  ms-bookshelf-network:

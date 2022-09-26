@@ -1,5 +1,6 @@
 /Users/milonash/Documents/UniMelb/capstone 2022/ms-bookshelf/src/main/java/com/ms/bookshelf/model/Bookshelf.java
 /Users/milonash/Documents/UniMelb/capstone 2022/ms-bookshelf/src/main/java/com/ms/bookshelf/api/BookshelfResponse.java
+/Users/milonash/Documents/UniMelb/capstone 2022/ms-bookshelf/src/main/java/com/ms/bookshelf/api/BookshelfRequest.java
 /Users/milonash/Documents/UniMelb/capstone 2022/ms-bookshelf/src/main/java/com/ms/bookshelf/Application.java
 /Users/milonash/Documents/UniMelb/capstone 2022/ms-bookshelf/src/main/java/com/ms/bookshelf/model/Book.java
 /Users/milonash/Documents/UniMelb/capstone 2022/ms-bookshelf/src/main/java/com/ms/bookshelf/service/BookshelfService.java

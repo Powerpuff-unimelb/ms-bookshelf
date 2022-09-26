@@ -1,13 +1,13 @@
 package com.ms.bookshelf.api;
 
-import com.ms.bookshelf.model.Book;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.OneToMany;
-import java.util.List;
 
-import static javax.persistence.CascadeType.ALL;
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter@Setter
 public class BookshelfRequest {
     private int userId;

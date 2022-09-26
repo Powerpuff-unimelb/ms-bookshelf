@@ -10,10 +10,15 @@ import org.springframework.http.ResponseEntity;
 @RestController
 public class BookshelfController {
     @Autowired
-    BookshelfService bookshelfService;
-    @RequestMapping("/addBookshelf")
-    public ResponseEntity<?> addBookshelf(@RequestBody BookshelfRequest request) {
+    BookshelfService bookCollectionService;
+    @PostMapping("/addBookshelf")
+    public ResponseEntity<?> addBookCollection(@RequestBody BookshelfRequest request) {
         //return new ResponseEntity<>("Hello world from bookshelf controller", HttpStatus.OK);
-        return new ResponseEntity<>(bookshelfService.addBookshelf(request), HttpStatus.OK);
+        return new ResponseEntity<>(bookCollectionService.addBookshelf(request), HttpStatus.OK);
     }
+/*    @RequestMapping("/addBookCollection")
+    public ResponseEntity<?> getBookCollectionByUserId(@RequestBody int userId) {
+        //return new ResponseEntity<>("Hello world from bookshelf controller", HttpStatus.OK);
+        return new ResponseEntity<>(bookshelfService.getBookshelfByUserId(userId), HttpStatus.OK);
+    }*/
 }
