@@ -12,3 +12,8 @@ to run this micro-service simply navigate to the root directory and run the comm
 ```bash
 docker compose up --build -d
 ```
+this will build the docker images for ms-bookshelf and the MySQL and the execute the service on these containers 
+
+## Configuration
+
+### ms-bookshelf
