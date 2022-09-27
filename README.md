@@ -9,6 +9,6 @@ This is a microservice to manage books in the collective form of a bookshelf
 
 to run this micro-service simply navigate to the root directory and run the command 
 
-'''bash
+```bash
 docker compose up --build -d
-'''
+```
