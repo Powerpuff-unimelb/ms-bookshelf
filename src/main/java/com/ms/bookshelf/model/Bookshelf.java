@@ -20,9 +20,6 @@ import static javax.persistence.CascadeType.ALL;
 @Table(name = "bookshelf")
 public class Bookshelf {
 
-    public Bookshelf(BookshelfRequest bookshelfRequest){
-        this.userId = bookshelfRequest.getUserId();
-    }
     @Id
     @Column(name = "bookshelf_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,6 +30,11 @@ public class Bookshelf {
 
     @OneToMany(mappedBy = "bookshelf", cascade = ALL)
     List<Book> Books;
+
+    public Bookshelf(BookshelfRequest bookshelfRequest){
+        this.userId = bookshelfRequest.getUserId();
+    }
+
 }
 
 
