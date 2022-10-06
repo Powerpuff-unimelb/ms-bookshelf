@@ -18,7 +18,7 @@ public class BookshelfController {
     public ResponseEntity<?> addBookshelf(@RequestBody BookshelfRequest request) {
         return new ResponseEntity<>(bookshelfService.addBookshelf(request), HttpStatus.OK);
     }
-    @GetMapping("/getBookshelves")
+    @GetMapping("/getBookList")
     public List<Bookshelf> getBookshelvesByUserId(@RequestBody int UserId) {
         List<Bookshelf> bookshelves = bookshelfService.getBookshelvesByUserId(UserId).get();
         return bookshelves;
