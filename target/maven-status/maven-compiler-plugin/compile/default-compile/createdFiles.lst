@@ -1,8 +1,14 @@
+com/ms/bookshelf/api/BookRequest.class
 com/ms/bookshelf/model/Book.class
 com/ms/bookshelf/service/BookshelfService.class
+com/ms/bookshelf/api/BookshelfRequest.class
+com/ms/bookshelf/api/BookResponse.class
+com/ms/bookshelf/repository/BookRepository.class
+com/ms/bookshelf/api/BookResponse$BookResponseBuilder.class
+com/ms/bookshelf/api/BookshelfResponse$BookshelfResponseBuilder.class
 com/ms/bookshelf/model/Bookshelf.class
 com/ms/bookshelf/controller/BookshelfController.class
-com/ms/bookshelf/api/BookshelfRequest.class
 com/ms/bookshelf/api/BookshelfResponse.class
+com/ms/bookshelf/service/BookService.class
 com/ms/bookshelf/Application.class
-com/ms/bookshelf/api/BookshelfResponse$BookshelfResponseBuilder.class
+com/ms/bookshelf/controller/BookController.class

@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import java.util.Date;
+import java.util.List;
 
 @Entity
 @Getter
@@ -22,7 +24,18 @@ public class Book {
     private int bookId;
 
     private String title;
-    private String Author;
+    private String author;
+    private String cover;
+    private String ISBN;
+    private Date date;
+    private List<String> tags;
+    private String group;
+    private String description;
+    private List<String> notes;
+    private List<String> reviews;
+    private float rating;
+    private String status;
+    private Boolean isPublic;
 
     @ManyToOne
     private Bookshelf bookshelf;
