@@ -13,5 +13,7 @@ import java.util.Optional;
 public interface BookRepository extends JpaRepository<Book, Integer> {
 
     @Query(value = "SELECT * FROM book WHERE book.bookshelfId = :bookshelfId", nativeQuery = true)
-    public Optional<List<Book>> getBooksByBookshelfId(@Param("bookshelfId") int bookshelfId);
+    Optional<List<Book>> getBooksByBookshelfId(@Param("bookshelfId") int bookshelfId);
+
+    Optional<Book> getBookByBookId(int bookId);
 }

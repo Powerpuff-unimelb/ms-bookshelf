@@ -18,8 +18,9 @@ public class BookshelfController {
     public ResponseEntity<?> addBookshelf(@RequestBody BookshelfRequest request) {
         return new ResponseEntity<>(bookshelfService.addBookshelf(request), HttpStatus.OK);
     }
+
     //TODO: takes userToken and needs to get userId based off that then call that back
-    @GetMapping("/getBookList")
+    @GetMapping("/BookList")
     public List<Bookshelf> getBookshelfBySessionToken(@RequestBody String sessionToken) {
         List<Bookshelf> bookshelf = bookshelfService.getBookshelfBySessionToken(sessionToken).get();
         return bookshelf;

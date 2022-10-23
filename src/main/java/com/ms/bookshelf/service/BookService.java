@@ -25,4 +25,8 @@ public class BookService {
     public Optional<List<Book>> getBooksByBookshelfId(int bookshelfId){
         return bookRepository.getBooksByBookshelfId(bookshelfId);
     }
+
+    public Optional<Book> getBookByBookId(int bookId){
+        return bookRepository.getBookByBookId(bookId);
+    }
 }
