@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c52a416d-e1a3-4898-ae60-3997bd45304c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/api/BookRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/api/BookRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/controller/BookshelfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/controller/BookshelfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/model/Bookshelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/model/Bookshelf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/service/BookshelfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/service/BookshelfService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +30,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,7 +73,8 @@
     "last_opened_file_path": "/Users/milonash/Documents/UniMelb/capstone 2022/ms-bookshelf",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "orchideLicense"
   }
 }]]></component>
   <component name="RecentsManager">

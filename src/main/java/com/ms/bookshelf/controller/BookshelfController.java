@@ -20,10 +20,9 @@ public class BookshelfController {
     }
 
     //TODO: takes userToken and needs to get userId based off that then call that back
-    @GetMapping("/BookList")
-    public List<Bookshelf> getBookshelfBySessionToken(@RequestBody String sessionToken) {
-        List<Bookshelf> bookshelf = bookshelfService.getBookshelfBySessionToken(sessionToken).get();
-        return bookshelf;
+    @GetMapping("/git BookList")
+    public void getBookshelfBySessionToken(@RequestBody String sessionToken) {
+        bookshelfService.getBookshelfBySessionToken(sessionToken);
     }
 
 }

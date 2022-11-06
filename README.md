@@ -29,7 +29,7 @@ docker compose up -d
 - external exposed port: 8085
 - API URLS: [http://localhost:8085/bookshelf/addBookshelf]
 
-### ms-bookshelf
+### ms-bookshelf database
 
 - internal docker port: 3306
 - external exposed port: 3307
