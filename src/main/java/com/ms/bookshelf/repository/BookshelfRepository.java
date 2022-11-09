@@ -12,6 +12,6 @@ import java.util.Optional;
 
 @Repository
 public interface BookshelfRepository extends JpaRepository<Bookshelf, Integer> {
-    @Query("Select * From Bookshelf Where Bookshelf.userId = :userId")
-    public Optional<List<Bookshelf>> findByUserId(@Param("UserId") int UserId);
+    @Query(value = "SELECT * FROM Bookshelf WHERE Bookshelf.userId = :userId", nativeQuery = true)
+    public Optional<List<Bookshelf>> findByUserId(@Param("userId") int UserId);
 }

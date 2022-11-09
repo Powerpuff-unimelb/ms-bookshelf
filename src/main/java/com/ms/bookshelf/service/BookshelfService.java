@@ -9,7 +9,9 @@ import com.ms.bookshelf.model.Bookshelf;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,7 +26,10 @@ public class BookshelfService {
         return new BookshelfResponse(String.format("%s created bookshelf with id: %s", bookshelf.getUserId(),  bookshelf.getBookshelfId()));
     }
 
-    public Optional<List<Bookshelf>> getBookshelvesByUserId(int UserId) {
-        return bookshelfRepository.findByUserId(UserId);
+    public void getBookshelfBySessionToken(String sessionToken) {
+        //String uri = 'path/to/user-ms/getUserIdBysessionToken';
+        //RestTemplate restTemplate = new RestTemplate();
+        //String response = restTemplate.getForObject(uri, String.class);
+        //int userId = response.UserId();
     }
 }

@@ -26,6 +26,7 @@ public class Bookshelf {
     private int bookshelfId;
 
     @Getter@Setter
+    @Column(name="user_id")
     private int userId;
 
     @OneToMany(mappedBy = "bookshelf", cascade = ALL)

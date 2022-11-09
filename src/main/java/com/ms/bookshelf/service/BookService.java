@@ -9,6 +9,9 @@ import com.ms.bookshelf.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
 public class BookService {
     @Autowired
@@ -17,6 +20,13 @@ public class BookService {
     public BookResponse addBook(BookRequest bookRequest) {
         Book book = new Book(bookRequest);
         bookRepository.save(book);
-        return new BookResponse(String.format("%s created in bookshelf woth Id: %s",book.getTitle() , book.getBookshelfId()));
+        return new BookResponse(String.format("book with name %s created with Id: %s",book.getTitle(), book.getBookId()));
+    }
+    public Optional<List<Book>> getBooksByBookshelfId(int bookshelfId){
+        return bookRepository.getBooksByBookshelfId(bookshelfId);
+    }
+
+    public Optional<Book> getBookByBookId(int bookId){
+        return bookRepository.getBookByBookId(bookId);
     }
 }

@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 
+import java.util.List;
+
 @RestController
 public class BookController {
     @Autowired
@@ -15,8 +17,17 @@ public class BookController {
 
     @RequestMapping("/addBook")
     public ResponseEntity<?> addBook(@RequestBody BookRequest bookRequest) {
-        //return new ResponseEntity<>("Hello world from bookshelf controller", HttpStatus.OK);
         return new ResponseEntity<>(bookService.addBook(bookRequest), HttpStatus.OK);
+    }
+    @RequestMapping("/Books")
+    public List<Book> getBooksByBookshelfId(@RequestBody int bookshelfId) {
+        List<Book> books = bookService.getBooksByBookshelfId(bookshelfId).get();
+        return books;
+    }
+    @RequestMapping("Book/{bookId}")
+    public Book getBookByBookId(@PathVariable int bookId){
+        Book book = bookService.getBookByBookId(bookId).get();
+        return book;
     }
 }
 
