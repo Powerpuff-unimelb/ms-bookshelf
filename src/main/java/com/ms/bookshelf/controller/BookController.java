@@ -19,10 +19,15 @@ public class BookController {
     public ResponseEntity<?> addBook(@RequestBody BookRequest bookRequest) {
         return new ResponseEntity<>(bookService.addBook(bookRequest), HttpStatus.OK);
     }
-    @RequestMapping("/getBooks")
+    @RequestMapping("/Books")
     public List<Book> getBooksByBookshelfId(@RequestBody int bookshelfId) {
         List<Book> books = bookService.getBooksByBookshelfId(bookshelfId).get();
         return books;
+    }
+    @RequestMapping("Book/{bookId}")
+    public Book getBookByBookId(@PathVariable int bookId){
+        Book book = bookService.getBookByBookId(bookId).get();
+        return book;
     }
 }
 
