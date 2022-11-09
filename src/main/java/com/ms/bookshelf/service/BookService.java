@@ -20,7 +20,7 @@ public class BookService {
     public BookResponse addBook(BookRequest bookRequest) {
         Book book = new Book(bookRequest);
         bookRepository.save(book);
-        return new BookResponse(String.format("%s created in bookshelf with Id: ",book.getTitle()));
+        return new BookResponse(String.format("book with name %s created with Id: %s",book.getTitle(), book.getBookId()));
     }
     public Optional<List<Book>> getBooksByBookshelfId(int bookshelfId){
         return bookRepository.getBooksByBookshelfId(bookshelfId);

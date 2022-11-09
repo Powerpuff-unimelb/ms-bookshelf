@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c52a416d-e1a3-4898-ae60-3997bd45304c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/api/BookRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/api/BookRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/controller/BookshelfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/controller/BookshelfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/model/Bookshelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/model/Bookshelf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/service/BookshelfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ms/bookshelf/service/BookshelfService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
